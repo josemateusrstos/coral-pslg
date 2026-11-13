@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coral - Paróquia São Luiz Gonzaga</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+
+</head>
+<body>
+
+  <button onclick="teste()">Teste</button>
+
+
+  <div id="telaSelecao">
+    <header>
+      <h1>Coral - Paróquia São Luiz Gonzaga</h1>
+      <h2>✨🎄Cantata de Natal 2026🎄✨</h2>
+      <p class="subtitulo">Selecione a sua voz (Naipe) para ouvir a melodia do piano:</p>
+    </header>
+
+    <div class="grid-naipes">
+      <a class="btn-naipe-grande" onclick="selecionarNaipe('Soprano')" href="./telaMusicas.html">Soprano</a>
+      <a class="btn-naipe-grande" onclick="selecionarNaipe('Contralto')">Contralto</a>
+      <a class="btn-naipe-grande" onclick="selecionarNaipe('Tenor')">Tenor</a>
+      <a class="btn-naipe-grande" onclick="selecionarNaipe('Baixo')">Baixo</a>
+      <a class="btn-naipe-grande btn-naipe-todos" onclick="selecionarNaipe('Todos')">Todos os Naipes</a>
+    </div>
+  </div>
+
+  <div id="telaMusicas">
+    <div class="barramenu">
+      <span class="info-naipe" id="labelNaipeAtual">Voz: Soprano</span>
+      <button class="btn-voltar" onclick="voltarParaSelecao()">Trocar Voz</button>
+    </div>
+
+    <!-- <div id="lista" class="lista-musicas">
+      <div class="carregando">Carregando mídias...</div>
+    </div>
+  </div> -->
+  
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
