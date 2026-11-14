@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ouvir músicas</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+
+</head>
+<body>
+    <div id="telaMusicas">
+        <div class="barramenu">
+            <span class="info-naipe" id="labelNaipeAtual">Voz: Selecione</span>
+            <a class="btn-voltar" href="./index.html">Trocar Voz</a>
+        </div>
+
+        <div id="lista" class="lista-musicas">
+            <div class="carregando">Carregando mídias...</div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="./telaMusicas.js"></script>
+</body>
+</html>

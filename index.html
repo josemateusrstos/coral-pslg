@@ -10,9 +10,6 @@
 </head>
 <body>
 
-  <button onclick="teste()">Teste</button>
-
-
   <div id="telaSelecao">
     <header>
       <h1>Coral - Paróquia São Luiz Gonzaga</h1>
@@ -21,26 +18,15 @@
     </header>
 
     <div class="grid-naipes">
-      <a class="btn-naipe-grande" onclick="selecionarNaipe('Soprano')" href="./telaMusicas.html">Soprano</a>
-      <a class="btn-naipe-grande" onclick="selecionarNaipe('Contralto')">Contralto</a>
-      <a class="btn-naipe-grande" onclick="selecionarNaipe('Tenor')">Tenor</a>
-      <a class="btn-naipe-grande" onclick="selecionarNaipe('Baixo')">Baixo</a>
-      <a class="btn-naipe-grande btn-naipe-todos" onclick="selecionarNaipe('Todos')">Todos os Naipes</a>
+      <a class="btn-naipe-grande" onclick="selecionarNaipe('Sopranos')" href="./telaMusicas.html">Soprano</a>
+      <a class="btn-naipe-grande" onclick="selecionarNaipe('Contraltos')" href="./telaMusicas.html">Contralto</a>
+      <a class="btn-naipe-grande" onclick="selecionarNaipe('Tenores')" href="./telaMusicas.html">Tenor</a>
+      <a class="btn-naipe-grande" onclick="selecionarNaipe('Baixos')" href="./telaMusicas.html">Baixo</a>
+      <a class="btn-naipe-grande btn-naipe-todos" onclick="selecionarNaipe('Todos')" href="./telaMusicas.html">Todos os Naipes</a>
     </div>
   </div>
-
-  <div id="telaMusicas">
-    <div class="barramenu">
-      <span class="info-naipe" id="labelNaipeAtual">Voz: Soprano</span>
-      <button class="btn-voltar" onclick="voltarParaSelecao()">Trocar Voz</button>
-    </div>
-
-    <!-- <div id="lista" class="lista-musicas">
-      <div class="carregando">Carregando mídias...</div>
-    </div>
-  </div> -->
   
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script src="./script.js"></script>
+  <script src="./main.js"></script>
 </body>
 </html>
